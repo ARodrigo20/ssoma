@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210212142024_primera.cs" />
+    <Compile Remove="Migrations\20210212142024_primera.Designer.cs" />
+    <Compile Remove="Migrations\20210212142356_one.cs" />
+    <Compile Remove="Migrations\20210212142356_one.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200130182331_obs11.cs" />
+    <Compile Remove="Persistence\Migrations\20200130182331_obs11.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200130182639_obser-cab.cs" />
+    <Compile Remove="Persistence\Migrations\20200130182639_obser-cab.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200130184346_obser-cab2.cs" />
+    <Compile Remove="Persistence\Migrations\20200130184346_obser-cab2.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200203222521_obseAll239.cs" />
+    <Compile Remove="Persistence\Migrations\20200203222521_obseAll239.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200203222820_obseAll339.cs" />
+    <Compile Remove="Persistence\Migrations\20200203222820_obseAll339.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200203223206_obseAll339.cs" />
+    <Compile Remove="Persistence\Migrations\20200203223206_obseAll339.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200203225354_temp2.cs" />
+    <Compile Remove="Persistence\Migrations\20200203225354_temp2.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200204202413_data0.cs" />
+    <Compile Remove="Persistence\Migrations\20200204202413_data0.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200204202958_data00.cs" />
+    <Compile Remove="Persistence\Migrations\20200204202958_data00.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.1" />
+    <PackageReference Include="NReco.PdfRenderer" Version="1.3.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+    <PackageReference Include="Xabe.FFmpeg" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hsec.Application\Hsec.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+
+</Project>
